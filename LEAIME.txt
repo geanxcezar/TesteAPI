@@ -1,0 +1,20 @@
+
+usando bando de dados FIREBIRD 2.5
+
+/* Table: TABPOSTS, Owner: SYSDBA */
+
+CREATE TABLE "TABPOSTS" 
+(
+  "ID"	 INTEGER NOT NULL,
+  "USERID"	 INTEGER,
+  "TITLE"	 VARCHAR(300),
+  "BODY"	 VARCHAR(500),
+CONSTRAINT "PK_TABPOSTS" PRIMARY KEY ("ID")
+);
+
+
+"LOG" salvo na pasta da aplicação
+formato 
+Data Hora            - Id:  - UserId - EDI/EXC  - CAMPOS
+05/09/2021 19:45:10  - 2    - 99     - EDICAO   - {title = 'aaa'   body= 'bbb'} 
+05/09/2021 19:45:10  - 5    - 55     - EXVLUSAO - {title = 'aaa'   body= 'bbb'} 
